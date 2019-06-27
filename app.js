@@ -8,6 +8,11 @@
  */
 
 // Write your code here
+var AES = require("crypto-js/aes");
+var SHA256 = require("crypto-js/sha256");
+
+console.log(SHA256("Message"));
+
 
 /**
  * Variables: Do not change variable values to be able to answer the quiz
@@ -26,7 +31,9 @@ const dataObject = {
  * @param {*} obj 
  */
 
-function generateHash(obj) {
+function generateHash(SHA256) {
+
+	 SHA256 = require("crypto-js/sha256");
 	// Write your code here
 }
 
