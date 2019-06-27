@@ -8,10 +8,9 @@
  */
 
 // Write your code here
-var AES = require("crypto-js/aes");
 var SHA256 = require("crypto-js/sha256");
 
-console.log(SHA256("Message"));
+
 
 
 /**
@@ -31,10 +30,8 @@ const dataObject = {
  * @param {*} obj 
  */
 
-function generateHash(SHA256) {
-
-	 SHA256 = require("crypto-js/sha256");
-	// Write your code here
+function generateHash(obj) {
+	return SHA256(JSON.stringify(obj));
 }
 
 console.log(`SHA256 Hash: ${generateHash(data1)}`);
